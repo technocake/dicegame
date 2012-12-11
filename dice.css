@@ -1,19 +1,15 @@
-#dice {
+.dice {
 	display: block;
-	width: 220px;
-	height: 220px;
+	width: 223px;
+	height: 223px;
+	/* http://en.wikipedia.org/wiki/File:Dice.png */
 	background-image: url('Dice.png');
 	background-repeat: no-repeat;
-	border: 1px solid red;
+	
+	overflow: hidden;
 	
 }
 
-#dice {
-	float:left;
-	margin:0;
-	overflow: hidden;
-	margin: 20px;
-}
 
 
 
@@ -21,17 +17,66 @@
 	background-position: 0 0;
 }
 .d2 {
-	background-position: -225px 0px;
+	background-position: -223px 0px;
 }
 .d3 {
-	background-position: -450px 0;
+	background-position: -446px 0;
 }
 .d4 {
-	background-position: 0 -225px;
+	background-position: 0 -223px;
 }
 .d5 {
-	background-position: -225px -225px;
+	background-position: -223px -223px;
 }
 .d6 {
-	background-position: -450px -225px;
+	background-position: -446px -223px;
 }
+
+/*
+		3D
+
+ */
+
+.container {
+  width: 223px;
+  height: 223px;
+  position: relative;
+  perspective: 1000px;
+  margin: 0 auto;
+}
+
+#cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+
+#cube figure {
+  width: 223px;
+  height: 223px;
+  display: block;
+  position: absolute;
+  border-radius: 10px;
+  border: 2px dotted #434343;
+}
+
+
+
+
+#cube .front  { transform: rotateY(   0deg ) translateZ( 113px ); }
+#cube .back   { transform: rotateX( 180deg ) translateZ( 113px ); }
+#cube .right  { transform: rotateY(  90deg ) translateZ( 113px ); }
+#cube .left   { transform: rotateY( -90deg ) translateZ( 113px ); }
+#cube .top    { transform: rotateX(  90deg ) translateZ( 113px ); }
+#cube .bottom { transform: rotateX( -90deg ) translateZ( 113px ); }
+
+
+#cube.show-d1  { transform: translateZ( -113px ) rotateY(    0deg ); }
+#cube.show-d6   { transform: translateZ( -113px ) rotateX( -180deg ); }
+#cube.show-d5  { transform: translateZ( -113px ) rotateY(  -90deg ); }
+#cube.show-d3   { transform: translateZ( -113px ) rotateY(   90deg ); }
+#cube.show-d2    { transform: translateZ( -113px ) rotateX(  -90deg ); }
+#cube.show-d4 { transform: translateZ( -113px ) rotateX(   90deg ); }
+
+#cube { transition: 1s;}
