@@ -12,25 +12,21 @@
 
 
 
+#cube figure p:hover{
+	background: yellow;
+	-moz-opacity: 0.70;
+	opacity: 0.70;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=70);
+}
 
-.d1 {
-	background-position: 0 0;
-}
-.d2 {
-	background-position: -223px 0px;
-}
-.d3 {
-	background-position: -446px 0;
-}
-.d4 {
-	background-position: 0 -223px;
-}
-.d5 {
-	background-position: -223px -223px;
-}
-.d6 {
-	background-position: -446px -223px;
-}
+
+
+.d1 {	background-position: 0 0; 			}
+.d2 {	background-position: -223px 0px; 	}
+.d3 {	background-position: -446px 0; 		}
+.d4 {	background-position: 0 -223px; 		}
+.d5 {	background-position: -223px -223px;	}
+.d6 {	background-position: -446px -223px;	}
 
 /*
 		3D
@@ -52,7 +48,9 @@
   transform-style: preserve-3d;
 }
 
-#cube figure {
+#cube figure,#cube figure p {
+  margin: 0;
+  padding: 0;
   width: 223px;
   height: 223px;
   display: block;
