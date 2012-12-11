@@ -1,0 +1,37 @@
+#dice {
+	display: block;
+	width: 220px;
+	height: 220px;
+	background-image: url('Dice.png');
+	background-repeat: no-repeat;
+	border: 1px solid red;
+	
+}
+
+#dice {
+	float:left;
+	margin:0;
+	overflow: hidden;
+	margin: 20px;
+}
+
+
+
+.d1 {
+	background-position: 0 0;
+}
+.d2 {
+	background-position: -225px 0px;
+}
+.d3 {
+	background-position: -450px 0;
+}
+.d4 {
+	background-position: 0 -225px;
+}
+.d5 {
+	background-position: -225px -225px;
+}
+.d6 {
+	background-position: -450px -225px;
+}
