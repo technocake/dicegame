@@ -1,3 +1,4 @@
-<h1> dicegame, just a 3D dice really </h1>
+# dicegame, just a 3D dice really
+
 for a live demo: 
-	<a href="http://dev.technocake.net/dicegame/dice.htm">http://dev.technocake.net/dicegame/dice.htm</a>
+	[dev.technocake.xyz/dicegame/dice.htm](http://dev.technocake.xyz/dicegame/dice.htm)
